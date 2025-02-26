@@ -1,0 +1,1 @@
+This repository searches SEEK.com for data jobs in Sydney. The relevant data is scraped and stored in a Snowflake database. The process can be automated with Apache Airflow. There is also code that presents insights into the data.
