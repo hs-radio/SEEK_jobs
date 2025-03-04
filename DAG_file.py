@@ -5,14 +5,15 @@ from extract_data import get_URLs
 
 max_pages = 5
 
-# Corrected function to grab URLs
+# Function to grab URLs
 def grab_URLS(max_pages):
     urls = get_URLs(max_pages)
 
     print(f"URLs to SEEK jobs found in the first {max_pages} pages.")
-    for j, url in enumerate(urls):  # Corrected enumerate loop
+    for j, url in enumerate(urls):  
         print(f"({j}): {url}")
 
+# default arguments for DAG.
 default_args = {
     'owner': 'airflow',
     'depends_on_past': False,
